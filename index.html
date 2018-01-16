@@ -5,14 +5,25 @@
   <meta name="author" content="Larissa Pham">
 
 <title>a place for poems</title>
+  
+  <script  type="text/javascript">
+		function changeImg(imgNumber)	{
+			var myImages = ["https://i.imgur.com/Y5UecJm.gif","https://i.imgur.com/UGseuIH.gif"]; 
+			var imgShown = document.body.style.backgroundImage;
+			var newImgNumber =Math.floor(Math.random()*myImages.length);
+			document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
+		}
+		window.onload=changeImg;
+	</script>
+  
   <style>
     
 body {
     font-family: Times;
     font-size: 24px;
-    background-image: url("https://i.imgur.com/Y5UecJm.gif");
     bacground-color: #c5ecff;
 }
+
     
 a:link {
     text-decoration: none;
