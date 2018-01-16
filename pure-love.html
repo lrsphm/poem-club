@@ -13,6 +13,14 @@ body {
     background-color: #000000;
 }
 
+.grab {
+  cursor: grab;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+    
 .shimmer {
   display: inline-block;
   font-family: Times;
@@ -20,7 +28,6 @@ body {
   font-style: italic;
   font-weight: bold;
   color: white;
-  cursor: url(https://i.imgur.com/dHYk98C.gif) grab; 
   
   background: #878787 -webkit-gradient(linear, 100% 0, 0 0, from(#878787), color-stop(0.5, #c5c5c5), to(#878787));
   
@@ -88,7 +95,7 @@ div.info {
 <body>
 <div class="info">
   <div class="shimmer">
-    <span title="I wanted you to dominate me,">P</span><span title="But all you wanted to do was understand me.">U</span><span title="I wanted you to dominate me,">R</span><span title="But all you wanted to do was understand me.">E</span><br><span title="I wanted you to dominate me,">L</span><span title="But all you wanted to do was understand me.">O</span><span title="I wanted you to dominate me,">V</span><span title="But all you wanted to do was understand me.">E</span></div>
+    <span title="I wanted you to dominate me," class="grab">P</span><span title="But all you wanted to do was understand me.">U</span><span title="I wanted you to dominate me,">R</span><span title="But all you wanted to do was understand me.">E</span><br><span title="I wanted you to dominate me,">L</span><span title="But all you wanted to do was understand me.">O</span><span title="I wanted you to dominate me,">V</span><span title="But all you wanted to do was understand me.">E</span></div>
 </div>
   <div class="menu"><a href="/poem-club/">home</a></div>
 </div>
