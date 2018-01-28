@@ -8,25 +8,26 @@
   <meta name="author" content="Larissa Pham">
 
 <script>
-function animatethis(targetElement, speed) {
-    var scrollWidth = $(targetElement).get(0).scrollWidth;
-    var clientWidth = $(targetElement).get(0).clientWidth;
-    $(targetElement).animate({ scrollLeft: scrollWidth - clientWidth },
-    {
-        duration: speed,
-        complete: function () {
-            targetElement.animate({ scrollLeft: 0 },
-            {
-                duration: speed,
-                complete: function () {
-                    animatethis(targetElement, speed);
-                }
-            });
-        }
-    });
-};
-animatethis($('#poem'), 5000);
-}
+ $(document).ready(function() {
+        var sL = 4000;
+        $('.poem').animate({
+            scrollLeft : sL
+        },100000, 'linear');
+
+        $(".poem").on("click",function(){
+                $(this).stop(true,false);
+        });
+
+        $(".poem").on("mouseenter",function(){
+            $(this).stop(true,false);
+        });
+
+        $(".poem").on("mouseleave",function(){
+            $(this).animate({
+            scrollLeft : sL
+            },100000, 'linear');
+        });
+    })
 </script>
 
     <style type="text/css">
@@ -65,7 +66,7 @@ a:active {
   position: relative;
   top: 40%;
   padding: 10px 10px 10px;
-  background: light green;
+  background: green;
   
 }
 
