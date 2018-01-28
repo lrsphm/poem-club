@@ -7,30 +7,7 @@
   <meta name="keywords" content="poem, poetry, art, net, net art, web art, experimental poetry, experimental, literature, writing">
   <meta name="author" content="Larissa Pham">
 
-<script>
- $(document).ready(function() {
-        var sL = 4000;
-        $('.poem').animate({
-            scrollLeft : sL
-        },100000, 'linear');
-
-        $(".poem").on("click",function(){
-                $(this).stop(true,false);
-        });
-
-        $(".poem").on("mouseenter",function(){
-            $(this).stop(true,false);
-        });
-
-        $(".poem").on("mouseleave",function(){
-            $(this).animate({
-            scrollLeft : sL
-            },100000, 'linear');
-        });
-    })
-</script>
-
-    <style type="text/css">
+<style type="text/css">
 
 
 h1 {
@@ -60,14 +37,17 @@ a:active {
     text-decoration: underline;
 }
 
-#poem { 
-  white-space: nowrap; 
-  overflow-y: scroll;
+.poem { 
   position: relative;
   top: 40%;
+  width: 100%
   padding: 10px 10px 10px;
-  background: green;
-  
+  background: yellow;
+  animation: marquee 1000s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }
 
     </style>
@@ -76,9 +56,9 @@ a:active {
 
 <body>
 
-<div id="poem" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
+<div id="poem">
 and do you ever, glancing over your shoulder,
-think about the thing you didn’t choose—
+think about the thing you didn’t choose—&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 How if you had said “Yes I do love you”
 in that cadence, with that look on your face
 and opened your arms to him
@@ -106,7 +86,5 @@ taped to the front of the standing fan which pivots,
 slowly, back and forth,
 in the home of the life you could have chosen.
 </div>
-  
-
 </body>
 </html>
