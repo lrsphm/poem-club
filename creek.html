@@ -1,8 +1,149 @@
 <html>
 <head>
-<title="test">
+
+<title>the creek</title>
+
+  <meta name="description" content="experimental visual poetry">
+  <meta name="keywords" content="poem, poetry, art, net, net art, web art, experimental poetry, experimental, literature, writing">
+  <meta name="author" content="Larissa Pham">
+  
+<script>
+  function animatethis(targetElement, speed) {
+    var scrollWidth = $(targetElement).get(0).scrollWidth;
+    var clientWidth = $(targetElement).get(0).clientWidth;
+    $(targetElement).animate({ scrollLeft: scrollWidth - clientWidth },
+    {
+        duration: speed,
+        complete: function () {
+            targetElement.animate({ scrollLeft: 0 },
+            {
+                duration: speed,
+                complete: function () {
+                    animatethis(targetElement, speed);
+                }
+            });
+        }
+    });
+};
+animatethis($('#poem1'), 5000);
+  </script>
+  
+<style type="text/css">
+h1 {
+    color: black;
+    text-align: center;
+}
+body {
+    font-family: Helvetica;
+    font-size: 32px;
+    background: #c7dfc3;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+#poem1 { 
+  position: relative;
+  top: 30%; 
+  white-space: nowrap;
+  overflow-y: scroll;
+  height: 20px;
+  padding: 10px;
+  background: yellow;
+}
+  #poem2 { 
+  position: relative;
+  top: 40%; 
+  white-space: nowrap;
+  overflow-y: scroll;
+  height: 20px;
+  padding: 10px;
+  background: red;
+}
+  #poem3 { 
+  position: relative;
+  top: 50%; 
+  white-space: nowrap;
+  overflow-y: scroll;
+  height: 20px;
+  padding: 10px;
+  background: blue;
+}
+  #poem4 { 
+  position: relative;
+  top: 60%; 
+  white-space: nowrap;
+  overflow-y: scroll;
+  height: 20px;
+  padding: 10px;
+  background: green;
+}
+  #poem5 { 
+  position: relative;
+  top: 70%; 
+  white-space: nowrap;
+  overflow-y: scroll;
+  height: 20px;
+  padding: 10px;
+  background: fuchsia;
+}
+  
+  
+ #arrow {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   opacity: 0.8;
+ }
+    </style>
 </head>
+
 <body>
-test
+  
+<div id="poem1">
+and do you ever, glancing over your shoulder, think about the thing you didn’t choose—&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  How if you had said “Yes I <em>do</em> love you” in that cadence, with that look on your face&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  and opened your arms to him&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;he might not have died in a climbing accident,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+or at least not pretended to—
+  </div>
+<div id="poem2">
+  you wrote a short story about this, in which you mix up what happened with a dream you once had&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+and what if you had stayed, then, in the place you’ve never chosen, where you climbed out your bedroom window at night to drink wine by the creek and watch the sun rise through the trees—
+  </div>
+<div id="poem3">
+  There’s no way to tell if you could have been any more lovely,
+any more kind or generous or good, whether you chose to be with him
+or to be with no one, whether you chose
+to stay or go, which is what all choices become eventually—
+All you know now is the space between your fingers,
+and the muscle pounding in your chest,
+  </div>
+  <div id="poem4">
+    and you cannot imagine a world
+in which you haven’t had this improbable faith,
+the one that causes you to believe this is the only life you could have possibly lived,
+the life that now unfurls before you like a magician’s trick,
+a stream of white doves disappearing into smoke,
+a chain of silk scarves, gold and blue, neverending,
+or maybe something smaller than that,
+and more possible:
+  </div>
+  <div id="poem5">
+    maybe the cellophane ribbons in pastel colors
+taped to the front of the standing fan which pivots,
+slowly, back and forth,
+in the home of the life you could have chosen.
+  </div>
+  
+  
+  <div id="arrow"><a href="https://lrsphm.github.io/poem-club/index.html" style="color:white">home</a></div>
 </body>
 </html>
