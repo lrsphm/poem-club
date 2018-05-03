@@ -1,0 +1,206 @@
+<html>
+<head>
+
+<title>[EMOTIONAL MUSIC PLAYS]</title>
+
+  <meta name="description" content="experimental visual poetry">
+  <meta name="keywords" content="poem, poetry, art, net, net art, web art, experimental poetry, experimental, literature, writing">
+  <meta name="author" content="Larissa Pham">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
+
+<script>
+var clicks = 0;
+
+ function onClick() {
+   clicks += 1;
+   var message = "[emotional music plays]";
+   if(clicks==1)
+     { message = "[emotional music plays]";}
+else if(clicks==2)
+   {message ="Yeah…";}
+else if(clicks==3)
+   {message ="I don’t know,";}
+else if(clicks==4)
+     {message = "I’ve been going through some stuff lately.";}
+else if(clicks==5)
+     {message = "No, nothing bad, just, you know,";}
+else if(clicks==6)
+     {message = "Sometimes you just want everything to slow down.";}
+else if(clicks==7)
+     {message = "But it doesn’t.";}
+else if(clicks==8)
+     {message = "When it’s spring, and the cherries are in bloom,";}
+else if(clicks==9)
+     {message = "It always makes me so nostalgic.";}
+else if(clicks==10)
+     {message = "It’s like a thousand memories are packed into each flower.";}
+else if(clicks==11)
+     {message = "Spring is such a short season, so the memories feel extra sharp.";}
+else if(clicks==12)
+     {message = "Does that make sense?";}
+else if(clicks==13)
+     {message = "…";}
+else if(clicks==14)
+     {message = "Haha…";}
+else if(clicks==15)
+     {message = "The trees always bloom all at once, almost.";}
+else if(clicks==16)
+     {message = "You’re going about your days and then, all of a sudden,";}
+else if(clicks==17)
+     {message = "Flowers, everywhere, an explosion.";}
+else if(clicks==18)
+     {message = "This time of year, I get worried I'll never have enough time.";}
+else if(clicks==19)
+     {message = "<i>'it's no use worrying about Time'—";}
+else if(clicks==20)
+     {message = "—That's Frank O'Hara. 'Animals'.";}
+else if(clicks==21)
+     {message = "It's like everything I do, I have to do while the cherries bloom.";}
+else if(clicks==22)
+     {message = "And I get so worried, trying to grab all this joy";}
+else if(clicks==23)
+     {message = "Right out of the air,";}
+else if(clicks==24)
+     {message = "And I worry that if I don't get it now,";}
+else if(clicks==25)
+     {message = "I'll never get it.";}
+else if(clicks==26)
+     {message = "When I'm happy, I want to keep it with me forever,";}
+else if(clicks==27)
+     {message = "You know?";}
+else if(clicks==28)
+     {message = "I know that's not how it works.";}
+else if(clicks==29)
+     {message = "It just feels like it sometimes—like I'll lose it.";}
+else if(clicks==30)
+     {message = "…";}
+else if(clicks==31)
+     {message = "Uh-huh.";}
+else if(clicks==32)
+     {message = "…";}
+else if(clicks==33)
+     {message = "Haha, yeah, you're right.";}
+else if(clicks==34)
+     {message = "It's true that joy comes when you don't expect it.";}
+else if(clicks==35)
+     {message = "You can trust that, if you can trust anything.";}
+else if(clicks==36)
+     {message = "Yeah.";}
+else if(clicks==37)
+     {message = "Yeah, I am happy.";}
+else if(clicks==38)
+     {message = "Uh-huh.";}
+else if(clicks==39)
+     {message = "…";}
+else if(clicks==40)
+     {message = "Uh-huh.";}
+else if(clicks==41)
+     {message = "…";}
+else if(clicks==42)
+     {message = "Love you too.";}
+else if(clicks==43)
+     {message = "<span id='credits'>Audio is 'End II' by <a href='https://j-e-n.bandcamp.com/' target='_blank'>jen.</a></span>";}
+else if(clicks==44)
+     {message = "<span id='credits'>Poem and graphics by Larissa Pham.</span>";}
+else if(clicks>=45)
+     {message = "<span id='credits'>Reload page to replay.</span>";}
+   document.getElementById("message").innerHTML = message;
+     
+
+ }; 
+    </script>
+    
+<style type="text/css">
+
+body {
+    background-image: url("cherrieshorizontal.gif");
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: cover;
+}
+    
+    
+#message {
+    height: 150px;
+    width: 800px;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -400px;
+    overflow-y: hidden;
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial;
+    font-weight: bolder;
+    font-size: 48px;
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    paint-order: stroke fill;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+#clicky {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    width: 800px;
+    height: 10px;
+    margin-left: -400px;
+    text-align: center;
+}
+    
+#credits {
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+    font-weight: normal;
+    -webkit-text-stroke: 0px black;
+    text-shadow: 0px 0px 0px #000000;
+    font-size: 24px;
+
+}
+
+#arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    opacity: .5;
+   }
+    
+button {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+    
+a:link {
+    text-decoration: underline;
+    color: white;
+
+}
+    
+    
+</style>
+
+</head>
+
+<body>
+    
+    <div id="message"></div>
+    <div id="clicky">
+        &nbsp;
+        <button type="button" id="buttonclick" onClick="onClick()">click</button>
+    </div>
+    <div id="arrow"><a href="https://lrsphm.github.io/poem-club/index.html" style="color:white">home</a></div>
+</body>
+
+</html>
