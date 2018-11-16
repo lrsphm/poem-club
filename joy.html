@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="experimental visual poetry">
+  <meta name="keywords" content="poem, poetry, art, net, net art, web art, experimental poetry, experimental, literature, writing">
+  <meta name="author" content="Larissa Pham">
+
+<title>JOY</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet">
+
+  <style>
+    
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    background-color: black;
+    text-shadow: 1px 1px 1px gray;
+    background-image: url("shanghai%20bund-compress.gif");
+    background-size: cover;
+    color: white;
+}
+
+    
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+a:active {
+    text-decoration: underline;
+    color: black;
+}
+
+@keyframes fadeinout {
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+      }
+      
+#poem {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: auto;
+    margin-left: -300px;
+    margin-top: -100px;
+	background: none;
+	text-align: left;
+    cursor: crosshair;
+    opacity: 1;
+    animation-name: fadeinout;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+      
+#arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    opacity: .5;
+   }
+
+@media only screen and (max-device-width: 800px) {
+    body {
+    font-size: 24px;
+  }
+    
+    #poem{
+        display: inline-block;
+    }  
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+    font-size: 24px; 
+  }
+
+    #poem{
+        display: inline-block;
+    }
+}
+  </style>
+    
+</head>
+<body>
+<div id="poem">
+when i’m happy<br>
+i imagine myself dancing<br>
+when i’m really happy<br>
+i imagine myself dancing under strobe lights
+</div>
+    
+<div id="arrow"><a href="https://lrsphm.github.io/poem-club/index.html" style="color:white">home</a></div>
+</body>
+</html>
