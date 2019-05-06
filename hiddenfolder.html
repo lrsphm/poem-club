@@ -1,0 +1,292 @@
+
+<html>
+<head>
+
+<title>hidden folder</title>
+
+  <meta name="description" content="experimental visual poetry">
+  <meta name="keywords" content="poem, poetry, art, net, net art, web art, experimental poetry, experimental, literature, writing">
+  <meta name="author" content="Larissa Pham">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono|Exo+2:900" rel="stylesheet">
+
+<audio id='mySound' autoplay loop>
+  <source src="staccatotone_rypkema.m4a" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+<script type="text/javascript">
+function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+        
+</script>
+    
+<style type="text/css">
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+body {
+    font-family: Times;
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    background-image: none;
+    background-repeat: repeat;
+    background-color: white;
+    background-size: 500px;
+    text-transform: none;
+    text-shadow: 1px 1px 3px gray;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform:rotateY(0deg);}
+    85% { -webkit-transform:rotateY(360deg);}
+    100% { -webkit-transform:rotateY(360deg);}
+
+    }
+    
+@keyframes spin {
+    0% {transform:rotateY(0deg);}
+    85% {transform:rotateY(360deg);}
+    100% {transform: rotateY(360deg);}
+    }
+
+@keyframes visibility {
+    from {opacity:0;}
+    to {opacity:100;}
+    }
+    
+.card1 {
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 6s ease-in-out infinite;
+    animation-delay: 0s;
+    box-shadow: 0px 0px 7px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: .80;
+    }
+
+.card2 {
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 6s ease-in-out infinite;
+    animation-delay: -2s;
+    box-shadow: 0px 0px 7px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: .80;
+
+
+    }  
+
+.card1:hover {
+    animation: step-end;
+    opacity: 100;
+}
+    
+.card2:hover {
+    animation: step-end;
+    opacity: 100;
+}
+    
+.content {
+    padding: 20px;
+    opacity: 0;
+    }
+
+.content:hover {
+    opacity: 100;
+    animation: visibility 2s ease;
+    animation-fill-mode: forwards;
+    }
+    
+#gridA1  {
+    position: fixed; 
+    top: 0; 
+    left: 17%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridA2  {
+    position: fixed; 
+    top: 0; 
+    left: 33%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridA3  {
+    position: fixed; 
+    top: 0; 
+    left: 49%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridA4  {
+    position: fixed; 
+    top: 0; 
+    left: 65%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+
+#gridB1  {
+    position: fixed; 
+    top: 32%; 
+    left: 17%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridB2  {
+    position: fixed; 
+    top: 32%; 
+    left: 33%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridB3  {
+    position: fixed; 
+    top: 32%; 
+    left: 49%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridB4  {
+    position: fixed; 
+    top: 32%; 
+    left: 65%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+
+#gridC1  {
+    position: fixed; 
+    top: 64%; 
+    left: 17%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridC2  {
+    position: fixed; 
+    top: 64%; 
+    left: 33%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridC3  {
+    position: fixed; 
+    top: 64%; 
+    left: 49%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+#gridC4  {
+    position: fixed; 
+    top: 64%; 
+    left: 65%; 
+    width: 15%; 
+    height: 30%;
+    margin: 20px;
+    }
+    
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+    
+    </style>
+
+    
+</head>
+
+<body>
+  
+<div id="gridA1" class="card1">
+       <div id="contentA1" class="content"><br><br><br>Sometimes it’s hard for me to tell you what I want from you<br><br><br><br><br></div>
+    </div>
+    
+<div id="gridA2" class="card1">
+    <div id="contentA2" class="content"><br>The other morning, I woke up early and looked at the videos you sent to me, your hard cock lolling on your stomach in the half-light<br><br><br></div>
+    </div>
+    
+<div id="gridA3" class="card1">
+    <div id="contentA3" class="content"><br><br>I send you pictures of my body, I arrange my composition carefully, as though inserting a memory<br><br><br><br></div>
+    </div>
+    
+<div id="gridA4" class="card1">
+    <div id="contentA4" class="content"><br><br>And now I’m remembering the time you pushed me up against the shower wall, my palms flat against the tile...<br><br><br><br></div>
+    </div>
+    
+<div id="gridB1" class="card2">
+    <div id="contentB1" class="content"><br><br>There are so many things I’m only brave enough to tell you when we’re not together in person<br><br><br><br><br><br></div>
+    </div>
+    
+<div id="gridB2" class="card2">
+    <div id="contentB2" class="content"><br><br>When I tell you what I want you to do, I’m giving myself permission to want it<br><br><br><br><br></div>
+    </div>
+    
+<div id="gridB3" class="card2">
+    <div id="contentB3" class="content"><br><br><br>Isn’t the ultimate fantasy to be known without speaking?<br><br><br><br><br><br></div>
+    </div>
+    
+<div id="gridB4" class="card2">
+    <div id="contentB4" class="content"><br><br>When I sit with my mouth open I am thinking of what you do to me—I lay down, I close my eyes<br><br><br><br><br></div>
+    </div>
+    
+<div id="gridC1" class="card1">
+    <div id="contentC1" class="content"><br><br>When you touch me, my heart snaps open like a flag, like a window looking onto the sea<br><br><br><br><br></div>
+    </div>
+    
+<div id="gridC2" class="card1">
+    <div id="contentC2" class="content"><br><br>I told you today, my favorite phrase is <i>responds pleasurably to stimulation</i>—what I meant was that I am a hole for you<br></div>
+    </div>
+    
+<div id="gridC3" class="card1">
+    <div id="contentC3" class="content"><br><br>And I love you, I love you like the tangerine loves the finger that slides under the skin...<br><br><br><br></div>
+    </div>
+    
+<div id="gridC4" class="card1">
+    <div id="contentC4" class="content"><br><br>I’d like to ask you, over and over, until we get tired, until we fall asleep, <i>what do you want me to do to you?</i><br><br><br></div>
+    </div>    
+
+</body>
+</html>
