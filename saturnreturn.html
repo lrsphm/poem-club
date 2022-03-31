@@ -101,7 +101,95 @@ a:active {
   25%  {background-color: #a8e6cf;}
   50%  {background-color: #ffaaa5;}
   100% {background-color: #a8dee6;}
-
+	  }
+	  
+@media only screen and (max-width: 800px) {
+    body {
+    font-size: 20px;
+  }
+    
+    #poemcontainer{
+    width: 80%;
+    position: relative; 
+    left: 5%;
+    margin-top: 0px;
+    
+    }
+    
+    #poemtext {
+    
+    }
+    
+    #orb {
+    margin-bottom: 0px;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-image: none;
+    border-radius: 50%;
+    animation-name: shift;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0px 0px 60px 100px #dcedc1, 0px 0px 40px 40px #dcedc1 inset;
+    transition: box-shadow;
+    transition-duration: 20s;
+    transition-timing-function: ease-in;
+    }
+    
+    #bigorb {
+    position: fixed;
+    bottom: -200px;
+    margin: auto;
+    width: auto;
+    height: 500px;
+    background-color: none;
+        }
+}
+      
+@media only screen and (max-device-width: 800px) {
+    body {
+    font-size: 20px;
+  }
+    
+    #poemcontainer{
+    width: 80%;
+    position: relative; 
+    left: 5%;
+    margin-top: 0px;
+    
+    }
+    
+    #poemtext {
+    
+    }
+    
+    #orb {
+    margin-bottom: 0px;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-image: none;
+    border-radius: 50%;
+    animation-name: shift;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0px 0px 60px 100px #dcedc1, 0px 0px 40px 40px #dcedc1 inset;
+    transition: box-shadow;
+    transition-duration: 20s;
+    transition-timing-function: ease-in;
+    }
+    
+    #bigorb {
+    position: fixed;
+    bottom: -200px;
+    margin: auto;
+    width: auto;
+    height: 500px;
+    background-color: none;
+        }
+}
 
     
 </style>
